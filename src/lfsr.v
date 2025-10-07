@@ -17,7 +17,7 @@ module lfsr (
 	end
 	always @(posedge clk_i or posedge reset_i)
 		if (reset_i)
-			lfsr_p <= 32'd12243396;
+			lfsr_p <= 32'd12243396; //
 		else
 			lfsr_p <= lfsr_n;
 	initial _sv2v_0 = 0;
